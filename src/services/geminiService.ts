@@ -3,7 +3,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { AppMode, TrendData, Region } from "../types";
 
 export const fetchTrends = async (mode: AppMode, region: Region): Promise<TrendData> => {
-  const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || '' });
+  const ai = new GoogleGenAI({ apiKey: process.env.Gemini API Key || '' });
   
   const regionContext = region === 'arab' 
     ? "Focus exclusively on Egypt and the Arab world. Look for trends in Arabic and English popular in this region (MENA)." 
